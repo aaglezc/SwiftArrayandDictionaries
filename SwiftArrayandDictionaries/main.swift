@@ -8,6 +8,12 @@
 
 import Foundation
 
+/*if (true < false)
+ {
+ print("HI")
+ }
+ */
+
 print("Hello, World!")
 
 var a:Int
@@ -15,14 +21,26 @@ var b:Bool
 var c:Character
 var d:Double
 var f:Float
-var s:String
 var dd:Decimal
 
-/*if (true < false)
-{
-    print("HI")
-}
- */
+var s:String = "Hello"
+var s2 = "Hello"
+
+var str = String()  //Object
+str = "Hello World"
+
+var p:String     //Reference
+p = "Calling"
+
+print(p,str,s)
+
+print(s.count)
+print(str.description)
+print(str.hasPrefix("Hello"))
+print(s.hasPrefix("He"))
+print(str.hasSuffix("lo"))
+print(str.lowercased())
+print(str.uppercased())
 
 
 
