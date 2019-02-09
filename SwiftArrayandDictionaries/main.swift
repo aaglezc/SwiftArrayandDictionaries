@@ -42,6 +42,50 @@ print(str.hasSuffix("lo"))
 print(str.lowercased())
 print(str.uppercased())
 
+//Scan every character of the string
+for c in str
+{
+    print(c)
+}
+//Close Ranged 1...10
+//PartialRangeUp 20..
+//PArtial RangeFrom
+//RangeThrough
+
+
+//ClosedRange
+var x = 5...10
+for i in x
+{
+    print(i)
+}
+print(x)
+
+var y = 1...
+for i in y
+{
+    print(i)
+    if (i == 10)
+    {
+        break
+    }
+}
+//PartialRangeFrom
+var z = ...50
+if (y.contains(-1000))
+{
+    print("TRUE")
+}
+else
+{
+    print("FALSE")
+}
+print(y.contains(10))
+
+
+
+
+
 
 
 
