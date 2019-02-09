@@ -141,20 +141,115 @@ var zz = Array<Int>()
 zz.append( 5000)
 print(zz[0])
 
+//-----------------------------------------------
 
+/*var array = [Int]()
+var array2 = [Int]()
 
+//array = [10,20,30,40,50]
+array.append(1)
+array.append(2)
+array.append(3)
+array.append(3)
+array.append(5)
 
+for i in 1...array.count
+{
+    print("I:",i)
+    var t = 1
+    for h in 1...array.count
+    {
+        if (h != i)
+        {
+           t = array[h] * t
+           print(t)
+        }
+    }
+    print(t)
+    array2.append(t)
+}
+print(array2)
+*/
 
+let x0 = [1,2,3,4,5]
+var y0 = Array(repeating: 0, count: x0.count)
 
+for i in 0..<x0.count
+{
+    var t = 1
+    for j in 0..<x0.count
+    {
+        if(j != 1)
+        {
+            t *= x0[j]
+        }
+    }
+    y0[i] = t
+    
+}
+print(x0)
+print(y0)
 
+// SET Example
+print("-----------Set Data Structure")
 
+var s1 = Set<String>()
+s1.insert("Canada")
+s1.insert("USA")
+s1.insert("India")
+s1.insert("Rusia")
+s1.insert("Brazil")
+s1.insert("China")
 
+print(s1)
 
+s1.insert("India")     // --will not insert
+print(s1)
+s1.insert("Mexico")
+print(s1)
 
+var d0 = [1: "ABC",
+          2: ":HELLO"]
+print("Dictionary Example")
+print(d0)
+d0[3] = "Hello world"
+print(d0)
+//print(d0[4])
 
+var country = Dictionary<String,String>()
+country.updateValue("INDIA", forKey: "IND")
+country.updateValue("China", forKey: "CHI")
+country.updateValue("Brazil",forKey: "BRA")
+country.updateValue("Mexico", forKey: "MEX")
 
-
-
+print(country)
+print("--------------------------------")
+for i in country
+{
+    print(i)
+    print(i.key,i.value)
+    
+}
+print("--------------------------------")
+for (k,v) in country
+{
+    print(k,v)
+}
+print("--------------------------------")
+for (_,v) in country
+{
+    print(v)
+}
+print("--------------------------------")
+for k in country.keys
+{
+    print(k)
+}
+print(d0.count)
+d0 = [:]        // equals to removeAll()
+print(d0.count)
+d0.removeAll()
+print(d0.count)
 
 
 
